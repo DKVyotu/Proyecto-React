@@ -1,0 +1,32 @@
+
+ul {
+    list-style-type: none; 
+}
+li {
+    padding: 20px;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #291300;
+    font-size: 25px;
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../assets/fondo.png);
+}
+.color1 {
+    background-color: #291300;
+}
+.color1:hover {
+    background-color: #38220e;
+}
