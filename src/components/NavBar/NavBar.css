@@ -1,0 +1,9 @@
+
+header {
+    background-image: url(../../assets/fondo.png);
+}
+
+.LogoNavBar{
+    position: absolute;
+    top: 0px;
+}

@@ -1,3 +1,47 @@
-.clase1{
-    color: blue;
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+}
+body {
+    color: #291300;
+}
+button {
+    padding: 0px;
+}
+.color1 {
+    background-color: #291300;
+}
+.color1:hover {
+    background-color: #38220e;
+    border: none;
+}
+.colortexto1 {
+    color: #291300;
+}
+.colortexto1:hover {
+    text-decoration: underline;
+}
+.texto40 {
+    font-size: 40px;
+}
+.texto24 {
+    font-size: 24px;
+}
+.texto14 {
+    font-size: 14px;
+}
+.justificado {
+    text-align: justify;
+  }
+.max800 {
+    width: 800px;
 }
