@@ -1,5 +1,4 @@
 
-import { ImCart } from "react-icons/im";
 import { FaBasketShopping } from "react-icons/fa6";
 
 
