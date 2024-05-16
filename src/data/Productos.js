@@ -6,7 +6,7 @@ const Productos = [
     descripcion: "Envase de Vidrio => 500 ML",
     precio: 45,
     stock: 10,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/PiscoPuro1.png",
   },
   {
@@ -16,7 +16,7 @@ const Productos = [
     descripcion: "Envase de Plastico => 1000 ML",
     precio: 60,
     stock: 5,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/BotellaPasticoGenerica.png",
   },
   {
@@ -26,7 +26,7 @@ const Productos = [
     descripcion: "Envase de Vidrio => 500 ML",
     precio: 45,
     stock: 99,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/PiscoPuroQuebranta.png",
   },
   {
@@ -36,7 +36,7 @@ const Productos = [
     descripcion: "Envase de Plastico => 1000 ML",
     precio: 60,
     stock: 29,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/BotellaPasticoGenerica.png",
   },
   {
@@ -46,7 +46,7 @@ const Productos = [
     descripcion: "Envase de Vidrio => 500 ML",
     precio: 45,
     stock: 34,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/PiscoPuroNegraCriolla.png",
   },
   {
@@ -56,7 +56,7 @@ const Productos = [
     descripcion: "Envase de Plastico => 1000 ML",
     precio: 60,
     stock: 12,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/BotellaPasticoGenerica.png",
   },
   {
@@ -66,7 +66,7 @@ const Productos = [
     descripcion: "Envase de Vidrio => 500 ML",
     precio: 45,
     stock: 34,
-    categoria: "Pisco",
+    categoria: "Piscos",
     imagen: "/Imagenes/PiscoAcholado.png",
   },
   {
@@ -76,7 +76,27 @@ const Productos = [
     descripcion: "Envase de Plastico => 1000 ML",
     precio: 60,
     stock: 12,
-    categoria: "Pisco",
+    categoria: "Piscos",
+    imagen: "/Imagenes/BotellaPasticoGenerica.png",
+  },
+  {
+    id: "9",
+    nombre: "Vino",
+    variedad: "Vino",
+    descripcion: "Envase de Plastico => 1000 ML",
+    precio: 60,
+    stock: 12,
+    categoria: "Vinos",
+    imagen: "/Imagenes/BotellaPasticoGenerica.png",
+  },
+  {
+    id: "10",
+    nombre: "Macerado",
+    variedad: "Macerado",
+    descripcion: "Envase de Plastico => 1000 ML",
+    precio: 60,
+    stock: 12,
+    categoria: "Macerados",
     imagen: "/Imagenes/BotellaPasticoGenerica.png",
   },
 

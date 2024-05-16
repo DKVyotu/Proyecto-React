@@ -1,17 +1,13 @@
-import BotonSwitch from "../Ejercicios/BotonSwitch";
-import LlamadaApi from "../Ejercicios/LlamadaApi";
-import Productos from "../Cards/Productos";
-
-
+//import LlamadaApi from "../Ejercicios/LlamadaApi";
+import Cards from "../Cards/Cards";
 
 function ItemListContainer() {
 
-  LlamadaApi();
+  //LlamadaApi();
 
   return (
     <div className="container-xxl d-flex flex-column align-items-center my-5">
-      <Productos />
-      <BotonSwitch />
+      <Cards />
     </div>
   );
 }

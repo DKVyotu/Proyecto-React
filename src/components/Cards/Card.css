@@ -24,7 +24,7 @@
     width: 100%;
     border: none;
     height: 48px;
-    background-color: bisque;
+    background-color: rgb(255, 183, 96);
     border-radius: 10px 0px 0px 10px;
 }
 .botonAgregar:hover {
