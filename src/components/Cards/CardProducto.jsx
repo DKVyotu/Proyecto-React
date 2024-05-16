@@ -5,7 +5,7 @@ import CardContador from "./CardContador";
 
 const CardProducto = ({ producto }) => {
   return (
-    <Link to={"/Producto/"+producto.id}>
+    <Link className="link-estilo" to={"/Producto/"+producto.id}>
       <div className="d-flex m-3 producto">
         <img className="imgProducto" src={producto.imagen} alt="" />
         <div className="d-flex flex-column justify-content-between m-3">

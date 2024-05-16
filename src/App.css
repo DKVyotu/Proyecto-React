@@ -17,8 +17,10 @@ body {
 button {
     padding: 0px;
 }
-Linck {
-    text-decoration: none;
+.link-estilo {
+    text-decoration: none; 
+    color: inherit;
+    cursor: pointer;
 }
 .color1 {
     background-color: #291300;

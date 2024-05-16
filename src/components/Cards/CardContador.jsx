@@ -25,6 +25,7 @@ const CardContador = ({ stock }) => {
       toast.error("No se puede restar mas al Stock Actual");
     }
   };
+  
 
   return (
     <>
