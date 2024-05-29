@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-import CardContador from "./CardContador";
 
 const CardProducto = ({ producto }) => {
   return (
@@ -18,7 +17,7 @@ const CardProducto = ({ producto }) => {
             <p>Stock: {producto.stock}</p>
           </div>
           <div>
-            <CardContador stock={producto.stock} />
+            <button className="botonVerMas">Ver mas...</button>
           </div>
         </div>
       </div>

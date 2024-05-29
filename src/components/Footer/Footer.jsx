@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from 'react-router-dom';
 
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -10,20 +11,16 @@ const Footer = () => {
   return (
     <footer>
       <div className="d-flex justify-content-between align-items-center py-4 container-xxl">
-        <a href="#">
+        <Link to="/">
           <img src={Logo} alt="Logo" width={100} />
-        </a>
+        </Link>
 
         <ul className="d-flex flex-column align-items-center">
           <li>
-            <a className="colortexto1 texto14" href="#">
-              Terminos y Condiciones
-            </a>
+            <Link className="colortexto1 texto14" to="/TerminosCondiciones">Terminos y Condiciones</Link>
           </li>
           <li>
-            <a className="colortexto1 texto14" href="#">
-              Preguntas Frecuentes
-            </a>
+            <Link className="colortexto1 texto14" to="/PreguntasFrecuentes">Preguntas Frecuentes</Link>
           </li>
         </ul>
         <ul className="d-flex flex-column align-items-center">
@@ -33,9 +30,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a className="colortexto1 texto14" href="#">
-              Contacto
-            </a>
+            <Link className="colortexto1 texto14" to="/Contacto">Contacto</Link>
           </li>
         </ul>
         <ul>

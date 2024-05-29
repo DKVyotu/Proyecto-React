@@ -28,57 +28,13 @@
     box-shadow: 3px 3px 8px -4px rgba(0,0,0,0.5);
 }
 
-.botonAgregar {
+.botonVerMas {
     width: 100%;
     border: none;
     height: 48px;
     background-color: rgb(255, 183, 96);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
 }
-.botonAgregar:hover {
+.botonVerMas:hover {
     background-color: rgb(255, 219, 174);
-}
-.numero {
-    padding: 8px;
-    background-color: white;
-    height: 48px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-.botonMas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 24px;
-    width: 20px;
-    color: white;
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: rgb(117, 117, 117);
-    border-radius: 0px 10px 0px 0px;
-}
-.botonMas:hover {
-    background-color: rgb(87, 87, 87);
-}
-.botonMas:active {
-    background-color: rgb(163, 163, 163);
-}
-.botonMenos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 24px;
-    width: 20px;
-    color: white;
-    border: none;
-    border-top: 1px solid white;
-    background-color: rgb(117, 117, 117);
-    border-radius: 0px 0px 10px 0px;
-}
-.botonMenos:hover {
-    background-color: rgb(87, 87, 87);
-}
-.botonMenos:active {
-    background-color: rgb(163, 163, 163);
 }

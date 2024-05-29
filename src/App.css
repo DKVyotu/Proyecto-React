@@ -17,6 +17,9 @@ body {
 button {
     padding: 0px;
 }
+.footerAbajo {
+    min-height: 77vh;
+}
 .link-estilo {
     text-decoration: none; 
     color: inherit;
@@ -32,6 +35,9 @@ button {
 }
 .colortexto1 {
     color: #291300;
+}
+.colortextoblanco {
+    color: #ffffff;
 }
 .colortexto1:hover {
     text-decoration: underline;
@@ -50,4 +56,77 @@ button {
   }
 .max800 {
     width: 800px;
+}
+.botonAgregar {
+    width: 100%;
+    border: none;
+    height: 48px;
+    background-color: rgb(255, 183, 96);
+    border-radius: 10px 0px 0px 10px;
+}
+.botonAgregar:hover {
+    background-color: rgb(255, 219, 174);
+}
+.numero {
+    padding: 8px;
+    background-color: white;
+    height: 48px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.botonMas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 20px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(117, 117, 117);
+    border-radius: 0px 10px 0px 0px;
+}
+.botonMas:hover {
+    background-color: rgb(87, 87, 87);
+}
+.botonMas:active {
+    background-color: rgb(163, 163, 163);
+}
+.botonMenos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 20px;
+    color: white;
+    border: none;
+    border-top: 1px solid white;
+    background-color: rgb(117, 117, 117);
+    border-radius: 0px 0px 10px 0px;
+}
+.botonMenos:hover {
+    background-color: rgb(87, 87, 87);
+}
+.botonMenos:active {
+    background-color: rgb(163, 163, 163);
+}
+.resumen {
+    margin-left: 50px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 9px 10px 4px -5px rgba(0,0,0,0.35);
+    padding: 10px;
+    width: 250px;
+    height: fit-content;
+}
+table {
+    box-shadow: 9px 10px 4px -5px rgba(0,0,0,0.35);
+}
+table tr th {
+    background-color: rgb(247, 247, 247) !important;
+}
+table tr td {
+    background-color: rgb(247, 247, 247) !important;
+    vertical-align: middle;
+    text-align: center;
 }

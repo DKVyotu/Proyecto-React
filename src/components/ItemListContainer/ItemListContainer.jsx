@@ -1,12 +1,10 @@
-//import LlamadaApi from "../Ejercicios/LlamadaApi";
 import Cards from "../Cards/Cards";
 
 function ItemListContainer() {
 
-  //LlamadaApi();
 
   return (
-    <div className="container-xxl d-flex flex-column align-items-center my-5">
+    <div className="container-xxl d-flex flex-column align-items-center my-5 footerAbajo">
       <Cards />
     </div>
   );

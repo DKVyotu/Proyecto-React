@@ -1,0 +1,6 @@
+.contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-top: 50px;
+}

@@ -3,10 +3,10 @@ import { toast } from "react-toastify";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
 
-const CardContador = ({ stock }) => {
-  const [Numero, setNumero] = useState(0);
+const Contador = ({ stock, addProducto }) => {
+  const [Numero, setNumero] = useState(1);
 
-  const Sumar = () => {
+  const handleClickSumar = () => {
     if (Numero < stock) {
       setNumero(Numero + 1);
       toast.success("Se agrego 1", {
@@ -17,8 +17,8 @@ const CardContador = ({ stock }) => {
     }
   };
 
-  const Restar = () => {
-    if (Numero >= 1) {
+  const handleClickRestar = () => {
+    if (Numero > 1) {
       setNumero(Numero - 1);
       toast.warning("Se resto 1");
     } else {
@@ -26,18 +26,22 @@ const CardContador = ({ stock }) => {
     }
   };
   
+  const handleClickAgregar = () => {
+    addProducto(Numero);
+  };
+
 
   return (
     <>
       <div className="contenedor">
-        <button className="botonAgregar" >Agregar</button>
+        <button className="botonAgregar" onClick={handleClickAgregar} >Agregar</button>
         <div className="d-flex">
           <p className="numero">{Numero}</p>
           <div>
-            <button className="botonMas" onClick={Sumar} >
+            <button className="botonMas" onClick={handleClickSumar} >
               <IoMdArrowDropup />
             </button>
-            <button className="botonMenos" onClick={Restar}>
+            <button className="botonMenos" onClick={handleClickRestar}>
               <IoMdArrowDropdown />
             </button>
           </div>
@@ -47,4 +51,4 @@ const CardContador = ({ stock }) => {
   );
 };
 
-export default CardContador;
+export default Contador;

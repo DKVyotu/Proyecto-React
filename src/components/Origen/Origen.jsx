@@ -3,7 +3,7 @@ import Divisor from "../../assets/Divisor.png";
 
 const Origen = () => {
   return (
-    <div className="container-xxl">
+    <div className="container-xxl footerAbajo ">
       <div className="d-flex flex-column align-items-center">
         <img
           className="py-4"
