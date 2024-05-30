@@ -1,7 +1,7 @@
 
 const Checkout = () => {
   return (
-    <div className="d-flex justify-content-center footerAbajo">asdasdasdasdassssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+    <div className="d-flex justify-content-center footerAbajo">Fin de la Compra</div>
   )
 }
 

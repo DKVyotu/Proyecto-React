@@ -5,7 +5,7 @@ import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ producto }) => {
 
-  const {agregarProducto} = useContext(CartContext)
+  const {agregarProducto, cantidadCarrito} = useContext(CartContext)
 
   const addProducto = (Numero) => {
     const productoCarrito = {...producto, cantidad: Numero}
@@ -27,6 +27,9 @@ const ItemDetail = ({ producto }) => {
           <p>Stock: {producto.stock}</p>
         </div>
         <Contador stock={producto.stock} addProducto={addProducto} />
+        
+        {cantidadCarrito() === 0 ? <div>nada</div> : <button>Continuar la compra</button>}
+        
       </div>
     </div>
   );
