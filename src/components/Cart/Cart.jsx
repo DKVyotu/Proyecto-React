@@ -36,18 +36,16 @@ const Cart = () => {
                         </thead>
                         <tbody>
                             {carrito.map( (producto)=>(
-                            <tr key={producto.id}>
+                            <tr key={producto.id} >                                
                                 <td><img src={producto.imagen} alt="" width={50}/></td>                                
-                                <td className="text-start">{producto.nombre}</td>
+                                <td className="text-start"><Link className="link-estilo " to={"/Producto/"+producto.id}>{producto.nombre}</Link></td>
                                 <td>${producto.precio}</td>
                                 <td>{producto.cantidad}</td>
                                 <td>${producto.precio*producto.cantidad}</td>
-                                <td><button className="btn" onClick={()=> borrarProductoEspecifico(producto.id)}><FaRegTrashAlt color="#DC3545" /></button></td>
+                                <td><button className="btn" onClick={()=> borrarProductoEspecifico(producto.id)}><FaRegTrashAlt color="#DC3545" /></button></td>                                
                             </tr>))}   
                         </tbody>
                     </table>
-
-                         
                     <button className="btn btn-outline-danger my-5" onClick={vaciarCarrito}>Vaciar carrito</button>
                 </div>
 

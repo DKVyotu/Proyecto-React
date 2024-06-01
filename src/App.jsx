@@ -12,6 +12,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 import Origen from './components/Origen/Origen';
+import Error404 from "./components/Error404/Error404";
 
 import Contacto from "./components/Contacto/Contacto";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes/PreguntasFrecuentes"
@@ -22,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        <ToastContainer />
+        <ToastContainer position="bottom-left" limit={7} />
 
         <NavBar />
     
@@ -42,13 +43,15 @@ function App() {
           <Route path="/PreguntasFrecuentes" element={<PreguntasFrecuentes />}/>
           <Route path="/TerminosCondiciones" element={<Terminos />}/>
           <Route path="/Checkout" element={<Checkout />}/>
+
+          <Route path="*" element={<Error404/>}/>
           
         </Routes>
     
         <Footer />
     
         
-      </CartProvider>
+      </CartProvider >
     </BrowserRouter>
   );
 }

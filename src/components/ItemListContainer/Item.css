@@ -4,14 +4,6 @@
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
 }
-.impProductoGrande {
-    width: 200px;
-    border-radius: 10px;
-    transition: transform  0.5s ;
-}
-.impProductoGrande:hover {
-    transform: scale(1.05);
-}
 .producto {
     max-width: 400px;
     height: 350px;
