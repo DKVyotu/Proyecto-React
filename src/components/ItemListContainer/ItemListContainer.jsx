@@ -9,9 +9,9 @@ import Error404 from "../Error404/Error404.jsx";
 
 const ItemListContainer = () => {
   const [productosObtenidos, setProductosObtenidos] = useState([]);
+  const { idCategoria } = useParams()
   const [cargando, setCargando] = useState(false)
   const [text, setText] = useState(true)
-  const { idCategoria } = useParams()
   const [error, setError]= useState(false)
 
 
@@ -43,11 +43,17 @@ const ItemListContainer = () => {
         })
         setProductosObtenidos(productosTransformados);
         productosTransformados.length === 0 ? (setError(true)) : setError(false);
+        console.log(productosTransformados.length)
         setCargando(false);
       })   
-      //Configurar una captura de error
-      .catch ((error)=>{console.error(error)})
-      .finally(() => {
+      //configurar una captura de error para mostar 
+      .catch ((error)=> {
+        console.error(error)
+        console.log('Error al obtener el producto Catch')
+      })
+      .finally (()=> {
+        setCargando(false)
+        console.log("Detail Finally")
       })
 
   }

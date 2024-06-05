@@ -35,6 +35,22 @@ const CartProvider = ({children}) => {
 
     }
 
+    //Quitar un producto del carrito
+    const quitarProducto = (idProductoARestar) => {
+        const productoRestado = carrito.map((producto) => {
+          if (producto.id === idProductoARestar) {
+            return { ...producto, cantidad: producto.cantidad - 1 };
+          } else {
+            return producto;
+          }
+        }).filter(producto => producto.cantidad > 0);
+      
+        setCarrito(productoRestado);
+      };
+
+
+
+
     //Mostrar la cantidad de item que tenemos en el carrito
     const cantidadCarrito = () => {
         const cantidadTotal =carrito.reduce((total, producto)=>total + producto.cantidad, 0)
@@ -68,7 +84,7 @@ const CartProvider = ({children}) => {
 
 
     return (
-    <CartContext.Provider value={{carrito, agregarProducto, cantidadCarrito, vaciarCarrito, borrarProductoEspecifico, precioTotal }}>
+    <CartContext.Provider value={{carrito, agregarProducto, cantidadCarrito, vaciarCarrito, borrarProductoEspecifico, precioTotal, quitarProducto }}>
         {children}
     </CartContext.Provider>)
 };

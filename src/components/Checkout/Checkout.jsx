@@ -1,9 +1,9 @@
-import { useContext, useState } from "react"
+import { useContext, useState, useEffect } from "react"
 import { CartContext } from "../../context/CartContext"
 import Formulario from "./Formulario"
+import PantallaConfirmacion from "./PantallaConfirmacion.jsx"
 import { addDoc, collection, doc, setDoc} from "firebase/firestore"
 import db from "../../db/db.js"
-
 
 
 const Checkout = () => {
@@ -65,16 +65,14 @@ const Checkout = () => {
     })
   }
 
-
   return (
-    <>
-    <div></div>
-    {/* Aca devo de poner que no se vea el formulario cuando aya un id y mostrar una pagina donde diga los resultados y guardar informacion */}
-      {idPedido ? (<div className="text-center">hay id {idPedido} fecha: {fechalog}</div>) : (<div className="text-center">no hay ID </div>)}
-      <Formulario 
-      formulario={formulario} 
-      guardarInput={guardarInput} 
-      enviarFormulario={enviarFormulario}/>
+    <> 
+      {(idPedido 
+          ? 
+          (<PantallaConfirmacion fecha={fechalog} id={idPedido}/>) 
+          : 
+          (<Formulario formulario={formulario} guardarInput={guardarInput} enviarFormulario={enviarFormulario}/>)
+      )}
     </>
   )
 }

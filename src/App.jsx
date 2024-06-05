@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        <ToastContainer position="bottom-left" limit={7} />
+        <ToastContainer position="bottom-left" limit={4} />
 
         <NavBar />
     

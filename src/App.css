@@ -183,6 +183,40 @@ button {
     transform: scale(1.05);
 }
 
+.circuloMas:hover {
+    transform: scale(1.1);
+}
+.circuloMas:active {
+    transform: scale(0.9);
+}   
+
+.circuloMenos:hover {
+    transform: scale(1.1);
+}
+.circuloMenos:active {
+    transform: scale(0.9);
+}
+
+.circuloDesactivado {
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    color: #c7c7c7;
+}
+
+.botonAgotado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(205, 205, 205);
+    color: white;
+    width: 275px;
+    height: 50px;
+    border-radius: 10px;
+}
+.desactivado {
+    filter: grayscale(100%);
+}
+
 
 @keyframes latido {
     0%, 100% {

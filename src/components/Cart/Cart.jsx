@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom";
-
 import { FaRegTrashAlt } from "react-icons/fa";
+import Contador from "./contador";
 
 
 const Cart = () => {
@@ -21,6 +21,7 @@ const Cart = () => {
           : 
         <div className="max1200">
             <h1 className="text-center p-5">Carrito</h1>
+            
             <div className="d-flex justify-content-between px-3">
                 <div>             
                     <table className="tabla">
@@ -40,7 +41,7 @@ const Cart = () => {
                                 <td><img src={producto.imagen} alt="" width={50}/></td>                                
                                 <td className="text-start"><Link className="link-estilo " to={"/Producto/"+producto.id}>{producto.nombre}</Link></td>
                                 <td>${producto.precio}</td>
-                                <td>{producto.cantidad}</td>
+                                <td><Contador producto={producto}/></td>
                                 <td>${producto.precio*producto.cantidad}</td>
                                 <td><button className="btn" onClick={()=> borrarProductoEspecifico(producto.id)}><FaRegTrashAlt color="#DC3545" /></button></td>                                
                             </tr>))}   
@@ -48,8 +49,8 @@ const Cart = () => {
                     </table>
                     <button className="btn btn-outline-danger my-5" onClick={vaciarCarrito}>Vaciar carrito</button>
                 </div>
-
-                <div className="d-flex flex-column resumen ">
+                
+                <div className="d-flex  flex-column resumen ">
                     <h4 className="text-center fw-bold">Resumen</h4>
                     <hr />
                     {carrito.map( (producto)=>(
@@ -66,7 +67,9 @@ const Cart = () => {
                         <input className="form-control me-3" type="text" placeholder="Cupon"/>
                         <button  className="btn btn-outline-secondary">Aplicar</button>
                     </div>
+                    <div className="d-flex justify-content-center">
                     <Link className="link-estilo botonComprar" to={"/Checkout"}>Comprar</Link>
+                    </div>
                 </div>
             </div>
         </div>}

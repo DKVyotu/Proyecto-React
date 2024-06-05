@@ -36,14 +36,25 @@ const ItemDetail = ({ producto }) => {
           </div>
         </div>
 
-        <div>          
+        <div className="">          
           <h4 className="pb-4">Precio: <b>${producto.precio}</b></h4>
-          <Contador stock={producto.stock} addProducto={addProducto} />
-          {productoEnCarrito ? 
-          <p className="mt-2">Tienes {productoEnCarrito.cantidad} de este producto en el carrito</p>
-          : 
-          <p className="mt-2">Aun no tienes este producto en tu carrito</p>
-          }                         
+          {producto.stock <= 0 ? 
+            <div className="botonAgotado">
+              <p className="text-center">Producto Agotado</p>
+            </div> 
+            :  
+            <>
+              <Contador stock={producto.stock} id={producto.id} addProducto={addProducto} /> 
+              {productoEnCarrito ? 
+                <p className="mt-2">Tienes {productoEnCarrito.cantidad} de este producto en el carrito</p>
+                : 
+                <p className="mt-2">Aun no tienes este producto en tu carrito</p>
+              } 
+            </>
+          }
+          
+          
+                                  
         </div>
 
       </div>
