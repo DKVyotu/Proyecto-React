@@ -17,7 +17,7 @@ const CardProducto = ({ producto }) => {
           <p>Stock: {producto.stock}</p>
         </div>
         <div>
-          <button className="botonVerMas">Ver más...</button>
+          {producto.stock === 0 ? <button className="botonVerMas">Agotado</button> : <button className="botonVerMas">Ver más...</button>}
         </div>
       </div>
     </div>

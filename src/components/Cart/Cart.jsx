@@ -11,11 +11,15 @@ const Cart = () => {
   return (
     <div className="d-flex justify-content-center footerAbajo">
         {cantidadCarrito() === 0 ?
-         <div className="d-flex justify-content-center flex-column p-5">
-            <h1 className="mb-4">Esta vacio papi</h1>
+         <div className="d-flex justify-content-center flex-column text-center">
+
+            <h1 >¡Tu carrito está vacío!</h1>
+            <h2 className="m-3" >😥</h2>
+            <h3 className="mb-5">¿Qué esperas para llenarlo?</h3>
+            
             <div className="d-flex justify-content-center">
                 <Link className="link-estilo btn btn-warning colortextoblanco me-4" to={"/"} >Ir al Inicio</Link>
-                <Link className="link-estilo btn btn-success colortextoblanco" to={"/Productos"} >ir a Comprar</Link>
+                <Link className="link-estilo btn btn-success colortextoblanco" to={"/Productos"} >Ir a Comprar</Link>
             </div>
          </div>
           : 
